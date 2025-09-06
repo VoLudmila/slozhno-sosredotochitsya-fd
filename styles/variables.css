@@ -2,15 +2,16 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
 :root {
   --bg-img: './../images/cover-image.png';
   --bg-color: #000028;
-  --title-color: #DB00FF;
+  --title-color: #db00ff;
   --caption-with-bg-color: #000028;
-  --caption-without-bg-color: #FF0070;
-  --accent-color: #FF0070;
-  --text-color: #F1B2CE;
-  --transparent-accent-color: rgba(255, 0, 112, 0.4);
+  --caption-without-bg-color: #ff0070;
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --transparent-accent-color: rgb(255 0 112 / 0.4);
   --main-text-size: 18px;
   --main-font: 'IBM Plex mono';
   --section-gap: 50px;
