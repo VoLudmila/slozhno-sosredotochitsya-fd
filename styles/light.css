@@ -12,7 +12,7 @@
   --caption-without-bg-color: #353430;
   --accent-color: #ff8dcb;
   --text-color: #353430;
-  --transparent-accent-color: rgba(50, 49, 45, 0.4);
+  --transparent-accent-color: rgb(50 49 45 / 0.4);
 }
 
 .theme-light .header__decor-rec {
@@ -20,6 +20,7 @@
 }
 
 @media (prefers-color-scheme: light) {
+
   :root {
     --bg-img: './../images/cover-image-light.png';
     --bg-color: #fff1f7;
@@ -28,7 +29,7 @@
     --caption-without-bg-color: #353430;
     --accent-color: #ff8dcb;
     --text-color: #353430;
-    --transparent-accent-color: rgba(50, 49, 45, 0.4);
+    --transparent-accent-color: rgb(50 49 45 / 0.4);
   }
 
   .header__decor-rec {
