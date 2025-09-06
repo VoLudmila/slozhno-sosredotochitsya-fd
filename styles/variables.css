@@ -6,10 +6,14 @@
   --bg-img: './../images/cover-image.png';
   --bg-color: #000028;
   --title-color: #DB00FF;
+  --caption-with-bg-color: #000028;
+  --caption-without-bg-color: #FF0070;
   --accent-color: #FF0070;
   --text-color: #F1B2CE;
   --transparent-accent-color: rgba(255, 0, 112, 0.4);
   --main-text-size: 18px;
   --main-font: 'IBM Plex mono';
-  /* main-gap */
+  --section-gap: 50px;
+  --main-gap: 40px;
+  --article-gap: 20px;
 }
