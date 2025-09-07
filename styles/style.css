@@ -304,8 +304,8 @@
     padding-inline-end: 0;
   }
 
-  .content-section:not(:last-of-type) {
-    grid-template-columns: 1fr 3fr;
+  .section__title {
+    max-inline-size: 315px;
   }
 
   .content-whats > .article-list {
