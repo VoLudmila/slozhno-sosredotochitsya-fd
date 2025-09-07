@@ -3,11 +3,11 @@
 .page {
   display: grid;
   gap: var(--section-gap);
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), monospace;
   font-size: 18px;
   line-height: 1.3;
   background-color: var(--bg-color, #000028);
-  background-image: var(--bg-img, './../images/cover-image.png');
+  background-image: var(--bg-img, url(./../images/cover-image.png));
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -58,8 +58,9 @@
 
 .header__decor-rec {
   position: absolute;
-  top: 0;
-  right: 10px;
+  top: var(--page-padding);
+  right: calc(var(--page-padding) + 10px);
+  display: var(--rec-display);
   color: var(--accent-color);
 }
 
@@ -93,6 +94,7 @@
   border: 1px solid transparent;
   padding: 0 12px;
   color: var(--caption-without-bg-color);
+  text-transform: lowercase;
   background-color: inherit;
   cursor: pointer;
 }
@@ -123,14 +125,13 @@
 
 .header__text {
   justify-self: flex-end;
-  min-width: 355px;
-  max-width: 491px;
   padding-inline-end: 2em;
   color: var(--caption-with-bg-color);
   font-weight: bold;
   font-size: 18px;
-  line-height: 23.4px;
   background-color: var(--accent-color);
+  max-inline-size: 355px;
+  max-block-size: 491px;
 }
 
 /* Main */

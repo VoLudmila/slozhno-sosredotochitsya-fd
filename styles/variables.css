@@ -4,7 +4,7 @@
 */
 
 :root {
-  --bg-img: './../images/cover-image.png';
+  --bg-img: url(./../images/cover-image-dark.png);
   --bg-color: #000028;
   --title-color: #db00ff;
   --caption-with-bg-color: #000028;
@@ -17,4 +17,5 @@
   --main-gap: 40px;
   --article-gap: 20px;
   --page-padding: 10px;
+  --rec-display: block;
 }
