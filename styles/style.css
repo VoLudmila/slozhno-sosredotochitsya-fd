@@ -14,7 +14,6 @@
 }
 
 .header,
-.main,
 .footer {
   padding: var(--page-padding);
 }
@@ -52,8 +51,8 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  height: 100vh;
-  min-height: 668px;
+  max-block-size: 100vh;
+  min-inline-size: 668px;
 }
 
 .header__decor-rec {
@@ -87,7 +86,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--page-padding);
 }
 
 .header__theme-menu-button {
@@ -145,8 +144,9 @@
 /* Section */
 
 .content-section {
+  padding-inline: var(--page-padding);
   display: grid;
-  gap: var(--article-gap);
+  gap: var(--content-gap);
 }
 
 .section__title {
@@ -163,7 +163,7 @@
 
 .section__article {
   display: grid;
-  gap: 20px;
+  gap: var(--article-gap);
 }
 
 .article__subtitle {
@@ -194,17 +194,25 @@
 
 /* Gallery */
 
+.content-gallery {
+  gap: var(--page-padding);
+}
+
 .gallery-list {
   display: grid;
-  gap: 10px;
+  gap: var(--gallery-gap);
   width: 100%;
+  line-height: 1;
+}
+
+.gallery-item {
+  display: block;
 }
 
 .gallery-pic {
   object-fit: cover;
   object-position: center;
-  inline-size: 100%;
-  block-size: 100%;
+  max-inline-size: 100%;
   max-block-size: 100%;
 }
 
@@ -232,6 +240,10 @@
     --page-padding: 20px;
   }
 
+  .header {
+    block-size: 100vh;
+  }
+
   .header__title {
     margin-inline-start: -20px;
   }
@@ -240,7 +252,7 @@
     max-width: 364px;
   }
 
-  .content-section:not(:last-of-type) {
+  .content-section:not(:last-child) {
     grid-template-columns: 1fr 2fr;
   }
 
@@ -250,6 +262,19 @@
 
   .content-whats > .article-list {
     grid-column: 2 span;
+  }
+
+  .content-hows > .article__title,
+  .content-hows > .article-list {
+    grid-column: 2;
+  }
+
+  .content-hows > .article__title {
+    block-size: 1.5em;
+  }
+
+  .content-hows > .article-list {
+    margin-top: -4em;
   }
 
   .gallery-list {
@@ -287,6 +312,10 @@
     grid-column: 3 / 6;
     grid-row: 3 / 5;
   }
+
+  .gallery-pic {
+    block-size: 100%;
+  }
 }
 
 @media (width >= 1024px) {
@@ -307,6 +336,10 @@
 
   .section__title {
     max-inline-size: 315px;
+  }
+
+  .content-hows > .article-list {
+    margin-top: -3em;
   }
 
   .content-whats > .article-list {

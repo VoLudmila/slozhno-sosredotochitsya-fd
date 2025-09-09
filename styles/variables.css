@@ -14,8 +14,10 @@
   --transparent-accent-color: rgb(255 0 112 / 0.4);
   --main-font: 'IBM Plex mono';
   --section-gap: 40px;
-  --main-gap: 40px;
-  --article-gap: 20px;
+  --main-gap: 45px;
+  --content-gap: 20px;
+  --article-gap: 15px;
   --page-padding: 10px;
+  --gallery-gap: 7px;
   --rec-display: block;
 }
